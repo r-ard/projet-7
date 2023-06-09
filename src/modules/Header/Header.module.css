@@ -1,0 +1,14 @@
+.linksWrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.linksWrapper > * {
+    margin-left: 10px;
+}
+
+.linksWrapper > *:first-child {
+    margin-left: 0;
+}
