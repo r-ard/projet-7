@@ -1,8 +1,8 @@
-import { useNavigate } from "react-router-dom";
-
 import LinkComponent from "../../components/Link/Link";
+import { ReactComponent as Logo } from "../../assets/logo.svg";
 
 import styles from './Header.module.css';
+import SvgIconComponent from "../../components/SvgIcon/SvgIcon";
 
 const navigationButtons = [
     { label: 'Acceuil', path: '/' },
@@ -11,7 +11,8 @@ const navigationButtons = [
 
 export default function HeaderComponent() {
     return (
-        <header>
+        <header className={styles.header}>
+            <SvgIconComponent Icon={Logo} />
             <nav>
                 <ul className={styles.linksWrapper}>
                     {

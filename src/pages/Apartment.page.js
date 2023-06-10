@@ -1,4 +1,4 @@
-export default function NotFoundPage() {
+export default function ApartmentPage() {
     return (
         <div>
 

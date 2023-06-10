@@ -5,10 +5,17 @@
     flex-wrap: nowrap;
 }
 
-.linksWrapper > * {
-    margin-left: 10px;
-}
+    .linksWrapper > * {
+        margin-left: 50px;
+    }
 
-.linksWrapper > *:first-child {
-    margin-left: 0;
+    .linksWrapper > *:first-child {
+        margin-left: 0;
+    }
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
