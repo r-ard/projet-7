@@ -10,11 +10,15 @@ class ApartmentsService {
      * @returns {any[]} Array contenant les appartements.
      */
     getAll() {
-        return this._data.map(d => ({
-            id: d.id,
-            title: d.title,
-            cover: d.cover
-        }));
+        return new Promise(async resolve => {
+            resolve(
+                this._data.map(d => ({
+                    id: d.id,
+                    title: d.title,
+                    cover: d.cover
+                }))
+            );
+        });
     }
 
     /**
@@ -23,9 +27,11 @@ class ApartmentsService {
      * @returns {Object|null} Données de l'appartement.
      */
     getById(id) {
-        for(const apartment of this._data)
-            if(apartment.id.toLowerCase() == id.toLowerCase()) return apartment;
-        return null;
+        return new Promise(async (resolve, reject) => {
+            for(const apartment of this._data)
+                if(apartment.id.toLowerCase() == id.toLowerCase()) return resolve(apartment);
+            reject(null);
+        });
     }
 };
 
