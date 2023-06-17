@@ -4,7 +4,8 @@ export default function SvgIconComponent({
     Icon,
     width,
     fillColor,
-    onClick
+    onClick,
+    className
 }) {
     const fillColors = {
         'white': styles.white
@@ -12,7 +13,7 @@ export default function SvgIconComponent({
 
     return (
         <div 
-            className={`${styles.svgWrapper} ${fillColor && fillColors[fillColor] ? fillColors[fillColor] : ''}`}
+            className={`${styles.svgWrapper} ${fillColor && fillColors[fillColor] ? fillColors[fillColor] : ''} ${className ? className : ''}`}
             style={{ width: width }}
             onClick={onClick}
         >

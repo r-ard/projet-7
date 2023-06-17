@@ -1,0 +1,48 @@
+.dropdown {
+    position: relative;
+}
+
+.dropHeader {
+    width: 100%;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.dropTitle {
+    color: #fefefe;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.dropToggler {
+    transition: transform 0.2s;
+}
+
+.dropToggler {
+    cursor: pointer;
+}
+
+.toggled {
+    transform: rotate(180deg);
+}
+
+.dropBody {
+    padding: 40px 20px;
+    color: var(--secondary-color);
+    font-size: 18px;
+    overflow: hidden;
+    background-color: #F6F6F6;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    display: none;
+    margin-top: -10px;
+}
+
+.dropBody.opened {
+    display: block;
+}
