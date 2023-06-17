@@ -1,10 +1,19 @@
 import styles from "./SvgIcon.module.css";
 
 export default function SvgIconComponent({
-    Icon
+    Icon,
+    width,
+    fillColor
 }) {
+    const fillColors = {
+        'white': styles.white
+    };
+
     return (
-        <div>
+        <div 
+            className={`${styles.svgWrapper} ${fillColor && fillColors[fillColor] ? fillColors[fillColor] : ''}`}
+            style={{ width: width }}
+        >
             <Icon />
         </div>
     );

@@ -1,0 +1,7 @@
+.svgWrapper > * {
+    width: 100%;
+}
+
+.white * {
+    fill: #fefefe;
+}
