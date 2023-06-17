@@ -26,8 +26,9 @@ export default function HomePage() {
 
             <GalleryComponent>
                 {
-                    apartments.map(a => (
+                    apartments.map((a, index) => (
                         <ThumbComponent
+                            key={`apartments-item-${index}`}
                             image={a.cover}
                             title={a.title}
                             onClick={() => navigate('/apartment', { state: { id: a.id } })}
