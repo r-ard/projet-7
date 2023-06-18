@@ -8,7 +8,7 @@ export default function FooterComponent() {
     return (
         <footer className={styles.footer}>
             <SvgIconComponent Icon={Logo} width="120px" fillColor="white" />
-            <TypographyComponent type="h3">
+            <TypographyComponent type="h3" className={styles.copyright}>
                 © 2020 Kasa. All rights reserved
             </TypographyComponent>
         </footer>

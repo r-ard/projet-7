@@ -1,5 +1,12 @@
+.svgWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .svgWrapper > * {
     width: 100%;
+    height: auto;
 }
 
 .white * {

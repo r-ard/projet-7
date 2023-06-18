@@ -17,7 +17,7 @@ export default function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/apartment" element={<ApartmentPage />} />
 
-          <Route element={<NotFoundPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </LayoutComponent>
     </BrowserRouter>

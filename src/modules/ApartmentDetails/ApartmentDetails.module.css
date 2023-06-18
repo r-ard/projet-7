@@ -23,3 +23,24 @@
     font-size: 18px;
     font-weight: 400;
 }
+
+@media only screen and (max-width: 600px) {
+    .apartmentDetails {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .apartmentDetails > * {
+            width: 100%;
+            height: auto;
+        }
+
+        .apartmentDetails > *:first-child {
+            margin-bottom: 20px;
+        }
+
+    .equipmentItem {
+        font-size: 12px;
+    }
+}

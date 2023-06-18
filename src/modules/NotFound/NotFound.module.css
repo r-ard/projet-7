@@ -1,0 +1,22 @@
+.notFound {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.message {
+    margin-top: 60px;
+}
+
+.link {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    .message {
+        margin-top: 10px;
+    }
+}

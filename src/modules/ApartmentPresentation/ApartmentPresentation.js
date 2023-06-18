@@ -40,6 +40,7 @@ export default function ApartmentPresentationComponent({
                         type="h4"
                         color="secondary"
                         align="end"
+                        className={styles.hostName}
                     >
                         { data.host.name }
                     </TypographyComponent>

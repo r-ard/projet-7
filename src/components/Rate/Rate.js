@@ -16,7 +16,7 @@ export default function RateComponent({
         <ul className={styles.rate}>
             {
                 generateIndexArray(maxRate).map(starIndex => (
-                    <li className={styles.item}>
+                    <li className={styles.item} key={`rater-item-${starIndex}`}>
                         <SvgIconComponent Icon={starIndex < rate ? RateEnabledIcon : RateDisabledIcon} />
                     </li>
                 ))

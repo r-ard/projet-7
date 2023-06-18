@@ -52,6 +52,10 @@
             margin-left: 10px;
         }
 
+.hostName {
+    max-width: 90px;
+}
+
 
 @media only screen and (max-width : 1024px) {
     .presentationTags {

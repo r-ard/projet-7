@@ -50,11 +50,11 @@
     display: block;
 }
 
-@media only screen and (max-width : 1024px) {
-
-}
-
 @media only screen and (max-width: 600px) {
+    .dropHeader {
+        padding: 8px 10px;
+    }
+
     .dropTitle {
         font-size: 13px;
     }
@@ -66,5 +66,6 @@
 
     .dropBody {
         padding: 30px 10px;
+        font-size: 12px;
     }
 }
