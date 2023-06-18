@@ -5,7 +5,7 @@ import HomePage from "./pages/Home.page";
 import ThemeComponent from "./modules/Theme/Theme";
 import AboutPage from "./pages/About.page";
 import ApartmentPage from "./pages/Apartment.page";
-import NotFoundPage from "./pages/404.page";
+import NotFoundPage from "./pages/NotFound.page";
 
 export default function App() {
   return (
