@@ -19,14 +19,12 @@ export default function CarrouselComponent({
                 <span className={`${styles.arrow} ${styles.left}`}>
                     <SvgIconComponent 
                         Icon={LeftLogo} 
-                        width="45px"
                         onClick={onPreviousImage} 
                     />
                 </span>
                 <span className={`${styles.arrow} ${styles.right}`}>
                     <SvgIconComponent 
                         Icon={RightLogo} 
-                        width="45px"
                         onClick={onNextImage}
                     />
                 </span>

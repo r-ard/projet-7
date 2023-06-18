@@ -35,6 +35,11 @@
     transition: transform 0.2s;
 }
 
+.arrow > * {
+    width: 45px;
+    height: auto;
+}
+
 .arrow > *:hover {
     cursor: pointer;
 }
@@ -53,4 +58,10 @@
 
 .right > *:hover {
     transform: translateX(8px);
+}
+
+@media only screen and (max-width: 600px) {
+    .arrow > * {
+        width: 15px;
+    }
 }

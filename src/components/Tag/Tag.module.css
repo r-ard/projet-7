@@ -1,0 +1,15 @@
+.tag {
+    padding: 4px 40px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 600px) {
+    .tag {
+        padding: 3px 30px;
+    }
+}

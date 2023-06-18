@@ -1,4 +1,4 @@
-import data from "../data/data.json";
+import data from "../datas/data.json";
 
 class ApartmentsService {
     constructor(data) {

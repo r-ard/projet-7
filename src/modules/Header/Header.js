@@ -12,7 +12,7 @@ const navigationButtons = [
 export default function HeaderComponent() {
     return (
         <header className={styles.header}>
-            <SvgIconComponent Icon={Logo} />
+            <SvgIconComponent Icon={Logo} className={styles.logo} />
             <nav>
                 <ul className={styles.linksWrapper}>
                     {

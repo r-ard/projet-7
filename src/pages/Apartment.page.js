@@ -5,6 +5,8 @@ import CarrouselComponent from "../components/Carrousel/Carrousel";
 import DropdownComponent from "../components/Dropdown/Dropdown";
 import RateComponent from "../components/Rate/Rate";
 import AvatarComponent from "../components/Avatar/Avatar";
+import ApartmentPresentationComponent from "../modules/ApartmentPresentation/ApartmentPresentation";
+import ApartmentDetailsComponent from "../modules/ApartmentDetails/ApartmentDetails";
 
 export default function ApartmentPage() {
     const navigate = useNavigate();
@@ -24,13 +26,16 @@ export default function ApartmentPage() {
                     ?
                 (
                     <>
-                        <CarrouselComponent images={apartment.pictures} />
-                        <AvatarComponent image={apartment.host.picture} />
-                        <DropdownComponent
-                            title="Test dropdown"
-                        >
-                            Lorem Ipsum
-                        </DropdownComponent>
+                        <CarrouselComponent 
+                            images={apartment.pictures} 
+                        />
+                        <ApartmentPresentationComponent 
+                            data={apartment} 
+                        />
+                        <ApartmentDetailsComponent 
+                            description={apartment.description} 
+                            equipments={apartment.equipments} 
+                        />
                     </>
                 )
                     :

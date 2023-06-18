@@ -1,0 +1,25 @@
+.apartmentDetails {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    align-items: stretch;
+}
+
+    .apartmentDetails > * {
+        width: 45%;
+        height: 100%;
+    }
+
+.equipments {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.equipmentItem {
+    color: var(--secondary-color);
+    font-size: 18px;
+    font-weight: 400;
+}

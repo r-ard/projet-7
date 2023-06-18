@@ -24,7 +24,6 @@ export default function DropdownComponent({
                 <SvgIconComponent
                     className={`${styles.dropToggler} ${opened ? styles.toggled : ''}`}
                     Icon={ArrowIcon} 
-                    width="24px" 
                     onClick={onToggle} 
                 />
             </div>

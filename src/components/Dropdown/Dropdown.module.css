@@ -3,6 +3,7 @@
 }
 
 .dropHeader {
+    position: relative;
     width: 100%;
     padding: 12px 20px;
     display: flex;
@@ -21,6 +22,8 @@
 
 .dropToggler {
     transition: transform 0.2s;
+    width: 24px;
+    height: 24px;
 }
 
 .dropToggler {
@@ -45,4 +48,23 @@
 
 .dropBody.opened {
     display: block;
+}
+
+@media only screen and (max-width : 1024px) {
+
+}
+
+@media only screen and (max-width: 600px) {
+    .dropTitle {
+        font-size: 13px;
+    }
+
+    .dropToggler {
+        width: 16px;
+        height: 16px;
+    }
+
+    .dropBody {
+        padding: 30px 10px;
+    }
 }

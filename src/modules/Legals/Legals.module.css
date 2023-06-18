@@ -1,0 +1,23 @@
+.legals {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.item {
+    width: 100%;
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .legals {
+        padding: 0;
+    }
+
+    .item {
+        margin-top: 20px;
+    }
+}
