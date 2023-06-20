@@ -18,7 +18,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "react-scripts build && node node_modules/serve/build/main.js -s build"
+    "deploy": "react-scripts build && node node_modules/serve/build/main.js -s build",
+    "generate:env": "cp ./.env.local.example ./.env.local"
   },
   "eslintConfig": {
     "extends": [

@@ -4,7 +4,6 @@ export default function ThemeComponent() {
             {
                 `
                     :root {
-                        --primary-color: ${process.env.REACT_APP_PRIMARY_COLOR};
                         --secondary-color: ${process.env.REACT_APP_SECONDARY_COLOR};
                     }
 
