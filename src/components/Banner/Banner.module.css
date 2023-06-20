@@ -25,3 +25,9 @@
 .banner > * {
     z-index: 1;
 }
+
+@media only screen and (max-width: 600px) {
+    .banner, .banner:before {
+        border-radius: 10px;
+    }
+}
