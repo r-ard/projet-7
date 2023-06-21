@@ -2,9 +2,6 @@ import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import apartmentsService from "../services/ApartmentsService";
 import CarrouselComponent from "../components/Carrousel/Carrousel";
-import DropdownComponent from "../components/Dropdown/Dropdown";
-import RateComponent from "../components/Rate/Rate";
-import AvatarComponent from "../components/Avatar/Avatar";
 import ApartmentPresentationComponent from "../modules/ApartmentPresentation/ApartmentPresentation";
 import ApartmentDetailsComponent from "../modules/ApartmentDetails/ApartmentDetails";
 
