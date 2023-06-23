@@ -13,7 +13,7 @@ export default function ApartmentPage() {
 
     useEffect(() => {
         if(!location.state || !location.state.id) return navigate('/');
-        apartmentsService.getById(location.state.id).then(setApartment);
+        apartmentsService.getById(location.state.id).then(setApartment).catch(() => navigate('/apartment-not-found'));
     }, [location]);
 
     return (
