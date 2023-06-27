@@ -4,7 +4,7 @@ Application web React pour le client "Kasa".
 
 ## Instructions de déploiement
 
-Ce projet requiert l'utilisation d'un gestionnaire de package en l'occurence `npm`.
+Ce projet requiert l'utilisation d'un gestionnaire de package, en l'occurence ici `npm`.
 
 Voici les instructions afin de déployer le projet :
 ```shell
