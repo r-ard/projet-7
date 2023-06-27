@@ -28,6 +28,11 @@ export default function CarrouselComponent({
                         onClick={onNextImage}
                     />
                 </span>
+                <span className={`${styles.counter}`}>
+                    {
+                        images ? `${selectedIndex+1}/${images.length}` : ''
+                    }
+                </span>
             </>
             {
                 images && images.map((image, index) => (
